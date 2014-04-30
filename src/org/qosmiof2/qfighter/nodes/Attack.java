@@ -3,7 +3,6 @@ package org.qosmiof2.qfighter.nodes;
 import org.powerbot.script.Random;
 import org.powerbot.script.rt6.ClientContext;
 import org.powerbot.script.rt6.Player;
-import org.qosmiof2.qfighter.data.Food;
 import org.qosmiof2.qfighter.data.Npc;
 import org.qosmiof2.qfighter.framework.Node;
 
@@ -11,7 +10,7 @@ public class Attack extends Node {
 
 	private Npc npc;
 
-	public Attack(ClientContext ctx, Food food, Npc npc) {
+	public Attack(ClientContext ctx, Npc npc) {
 		super(ctx);
 	}
 

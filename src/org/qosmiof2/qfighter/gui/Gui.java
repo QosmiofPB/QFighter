@@ -22,6 +22,7 @@ import org.qosmiof2.qfighter.QFighter;
 import org.qosmiof2.qfighter.data.Food;
 import org.qosmiof2.qfighter.data.Npc;
 import org.qosmiof2.qfighter.nodes.Attack;
+import org.qosmiof2.qfighter.nodes.Eat;
 import org.qosmiof2.qfighter.nodes.Walk;
 
 public class Gui extends ClientAccessor {
@@ -118,8 +119,9 @@ public class Gui extends ClientAccessor {
 				food = (Food) foodCb.getSelectedItem();
 				npc = (Npc) npcCb.getSelectedItem();
 				System.out.println(food + " " + npc);
-				QFighter.nodes.add(new Attack(ctx, food, npc));
+				QFighter.nodes.add(new Attack(ctx, npc));
 				QFighter.nodes.add(new Walk(ctx, npc));
+				QFighter.nodes.add(new Eat(ctx, food));
 			}
 
 		});
