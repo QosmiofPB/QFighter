@@ -9,13 +9,10 @@ import org.qosmiof2.qfighter.framework.Node;
 
 public class Attack extends Node {
 
-	private Food food;
 	private Npc npc;
 
 	public Attack(ClientContext ctx, Food food, Npc npc) {
 		super(ctx);
-		this.food = food;
-		this.npc = npc;
 	}
 
 	@Override
