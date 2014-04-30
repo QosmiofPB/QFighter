@@ -25,7 +25,7 @@ public class Eat extends Node {
 		Item item = ctx.backpack.select().id(food.getCookedId()).shuffle()
 				.poll();
 
-		if (!item.valid()) {
+		if (item.valid()) {
 			if (item.interact("Eat")) {
 
 			}
