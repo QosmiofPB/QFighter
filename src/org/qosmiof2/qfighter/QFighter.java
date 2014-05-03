@@ -51,7 +51,6 @@ public class QFighter extends
 	public void poll() {
 		for (Node node : nodes) {
 			if (node.activate()) {
-				System.out.println(node.toString());
 				node.execute();
 			}
 		}
